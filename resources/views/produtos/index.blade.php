@@ -40,7 +40,7 @@
                         <td>{{ $product->valor }}</td>
                         <td>{{ $product->quantidade }}</td>
                         <td>
-                            <form action="{{ route('produtos.destroy',$product->id) }}" method="Post">
+                            <form action="{{ route('produtos.destroy',$product->id) }}" method="Get">
                                 <a class="btn btn-primary" href="{{ route('produtos.edit',$product->id) }}">Editar</a>
                                 @csrf
                                 @method('DELETE')
