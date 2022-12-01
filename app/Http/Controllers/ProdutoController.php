@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use App\Models\Produto;
 use Illuminate\Http\Request;
 
 class ProdutoController extends Controller
@@ -25,7 +25,7 @@ class ProdutoController extends Controller
         $request->validate([
             'nome' => 'required',
             'valor' => 'required',
-            'qunatidade' => 'required',
+            'quantidade' => 'required',
         ]);
         
         Produto::create($request->post());
