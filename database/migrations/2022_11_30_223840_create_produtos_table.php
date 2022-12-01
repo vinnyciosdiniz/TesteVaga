@@ -16,9 +16,9 @@ return new class extends Migration
     Schema::create('produtos', function (Blueprint $table) {
         
         $table->id();
-        $table->string('nome')->default('produto sem nome');;
-        $table->string('valor')->default('100');;
-        $table->string('quantidade')->default('1');;
+        $table->string('nome')->default('produto sem nome');
+        $table->string('valor')->default('100');
+        $table->string('quantidade')->default('1');
         $table->timestamps();
     });
     }
